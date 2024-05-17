@@ -1,10 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react';
-import { auth, db } from '../../lib/firebase';
-import { doc, getDoc, setDoc, updateDoc } from "firebase/firestore";
+import { auth, db, doc, getDoc, setDoc, updateDoc } from '../../lib/firebase';
 
-export default function UserPage({ user, userData, loading }) {
+export default function UserPanel({ user, userData, loading }) {
 	// const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
 

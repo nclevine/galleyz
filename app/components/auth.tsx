@@ -1,9 +1,7 @@
 'use client'
 
 import { useState } from 'react';
-import { getAuth, fetchSignInMethodsForEmail, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-import { auth, db } from '../../lib/firebase';
-import { doc, getDoc, setDoc } from "firebase/firestore";
+import { auth, db, getAuth, fetchSignInMethodsForEmail, createUserWithEmailAndPassword, signInWithEmailAndPassword, doc, getDoc, setDoc } from '../../lib/firebase';
 
 export default function Auth() {
   const [email, setEmail] = useState('');
